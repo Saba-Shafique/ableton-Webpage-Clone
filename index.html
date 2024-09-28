@@ -1,58 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ableton Clone</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
     </style>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="top-nav">
-            <div class="logo">
-                <img src="images/logo.png" alt="Ableton Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li>Live</li>
-                    <li>Push</li>
-                    <li>Move</li>
-                    <li>Note</li>
-                    <li>Link</li>
-                    <li>Shop</li>
-                    <li>Packs</li>
-                    <li>Help</li>
-                    <li id="more">More +</li>
-                </ul>
-            </nav>
-            <!-- Promo Bar and Login moved here -->
-            <div class="right-corner">
-                <div class="promo-bar">Try Live 12 for free</div>
-                <div class="login-register">Log in or register</div>
-            </div>
+      <div class="top-nav">
+        <div class="logo">
+          <img src="images/logo.png" alt="Ableton Logo" />
         </div>
-        <!-- Sticky Navbar -->
-        <div class="sticky-nav">
-            <nav>
-                <ul>
-                    <li class="active">About</li>
-                    <li>Jobs</li>
-                    <li>Apprenticeships</li>
-                </ul>
-            </nav>
+        <nav>
+          <ul>
+            <li>Live</li>
+            <li>Push</li>
+            <li>Move</li>
+            <li>Note</li>
+            <li>Link</li>
+            <li>Shop</li>
+            <li>Packs</li>
+            <li>Help</li>
+            <li id="more">More +</li>
+          </ul>
+        </nav>
+        <!-- Promo Bar and Login moved here -->
+        <div class="right-corner">
+          <div class="promo-bar">Try Live 12 for free</div>
+          <div class="login-register">Log in or register</div>
         </div>
+      </div>
+      <!-- Sticky Navbar -->
+      <div class="sticky-nav">
+        <nav>
+          <ul>
+            <li class="active">About</li>
+            <li>Jobs</li>
+            <li>Apprenticeships</li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    
+
     <main>
-        <section class="hero-section">
-            <h1 class="overlay-text">Ableton</h1>
-        </section>
+      <section class="hero-section">
+        <h1 class="overlay-text">Ableton</h1>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Ableton. All rights reserved.</p>
+
+    <footer class="mainFooter">
+      <div class="footerContainer">
+        <div class="footerContext">
+          <div class="row">
+            <h1>Ableton</h1>
+          </div>
+
+          <div class="flexRow">
+            <div class="socials">
+              <ul>
+                <li>Register Live or Push</li>
+                <li>About Ableton</li>
+                <li>Jobs</li>
+              </ul>
+              <div class="social-media-icons">
+                <a href="#"
+                  ><img src="images/facebook-icon.png" alt="Facebook"
+                /></a>
+                <a href="#"><img src="images/x-icon.png" alt="X" /></a>
+                <a href="#"
+                  ><img src="images/youtube-icon.png" alt="YouTube"
+                /></a>
+                <a href="#"
+                  ><img src="images/instagram-icon.png" alt="Instagram"
+                /></a>
+                <a href="#"
+                  ><img src="images/tiktok-icon.png" alt="TikTok"
+                /></a>
+              </div>
+            </div>
+
+            <div class="education">
+              <h2>Education</h2>
+              <ul>
+                <li>Offers for students and teachers</li>
+                <li>Ableton for the Classroom</li>
+                <li>Ableton for Colleges and Universities</li>
+              </ul>
+            </div>
+
+            <div class="newsletter">
+              <h2>Sign up to our newsletter</h2>
+              <p>
+                Enter your email address to stay up to date with the latest
+                offers, tutorials, downloads, surveys, and more.
+              </p>
+              <form action="#" method="post">
+                <input type="email" placeholder="Email Address" />
+                <button type="submit">Sign up</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="flexRow">
+            <div class="community">
+              <h2>Community</h2>
+              <ul>
+                <li>Find Ableton User Groups ></li>
+                <li>Find Certified Training ></li>
+                <li>Become a Certified Trainer ></li>
+              </ul>
+            </div>
+
+            <div class="langLoc">
+              <label for="language">Language</label>
+              <select id="language">
+                <option value="en">English</option>
+                <option value="de">German</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+              </select>
+
+              <label for="location">Location</label>
+              <select id="location">
+                <option value="pk">Pakistan</option>
+                <option value="us">United States</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <ul class="footer-links">
+                <li>Contact Us</li>
+                <li>Press Resources</li>
+                <li>Legal Info</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Settings</li>
+                <li>Imprint</li>
+              </ul>
+              <div class="footer-made-in-berlin">
+                <p>Made in Berlin</p>
+                <img src="images/logo.png" alt="Ableton Logo" />
+              </div>
+          </div>
+
+        </div>
+      </div>
     </footer>
-</body>
+
+    
+  </body>
 </html>
