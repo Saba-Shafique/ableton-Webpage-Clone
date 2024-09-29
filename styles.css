@@ -161,7 +161,7 @@ footer {
   
   .footerContainer {
     width: 80%;
-    margin: 0 130px;
+    margin: 0 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,70 +280,151 @@ footer {
     background-color: #003bb3;
   }
   
-  /* Language and Location */
-  .langLoc {
+
+  /* Community Section Styling */
+  .flexRow2 {
     display: flex;
-    gap: 10px;
-  }
-  
-  .langLoc select {
+    justify-content: space-between;
+    width: 56%;
+    margin-bottom: 40px;
+    margin-top: 38px;
+    padding-top: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.community {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: auto; /* Push to the left */
+}
+
+.community ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.community ul li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.community ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Language and Location Section */
+.langLocContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px; /* Adds space between Language and Location dropdowns */
+    font-size: 14px;
+    color: #333;
+}
+
+.langLoc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.langLoc select {
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+    background-color: #f8f8f8;
+    width: auto; /* Adjusts the width to fit content */
+}
+
+.langLoc label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.langLocContainer select {
+    width: 130px; /* Adjust the width as needed */
+}
+
+@media (max-width: 768px) {
+    .flexRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .langLocContainer {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .langLoc select {
+        width: 100%;
+    }
+}
   
   /* Footer Links */
-  .footer-links {
+.footer-links {
     list-style-type: none;
     padding: 0;
     margin: 20px 0 10px 0;
     display: flex;
-    gap: 15px;
+    gap: 30px; /* Space between footer links */
+    justify-content: flex-start;
   }
   
   .footer-links li {
-    font-size: 12px;
-    color: #888;
+    font-size: 12px; /* Match the font size from the image */
+    color: #333; /* Use the gray color from the image */
     cursor: pointer;
   }
   
   .footer-links li:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subtle hover effect */
   }
   
   /* Made in Berlin Section */
   .footer-made-in-berlin {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    padding-left: 30px;
   }
   
   .footer-made-in-berlin p {
     margin-right: 10px;
-    font-size: 12px;
-    color: #333;
+    font-size: 12px; /* Match font size */
+    color: #333; /* Same color as the footer links */
   }
   
   .footer-made-in-berlin img {
-    width: 30px;
-    height: 30px;
+    width: 49px;
+    height: 27px;
+  }
+  
+  /* Footer Container */
+  .linkRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 120px;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .flexRow {
+    .linkRow {
       flex-direction: column;
       align-items: flex-start;
     }
   
-    .footerContainer {
-      width: 90%;
-    }
-  
-    .langLoc {
-      flex-direction: column;
-      align-items: flex-start;
+    .footer-made-in-berlin {
+      margin-top: 20px;
+      margin-left: 0;
     }
   }
   
