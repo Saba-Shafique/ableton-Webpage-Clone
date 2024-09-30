@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ableton Clone</title>
+    <title>Ableton</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
     </style>
@@ -20,7 +20,7 @@
           <img src="images/logo.png" alt="Ableton Logo" />
         </div>
         <nav>
-          <ul>
+          <ul class="desktop-menu">
             <li>Live</li>
             <li>Push</li>
             <li>Move</li>
@@ -32,13 +32,33 @@
             <li id="more">More +</li>
           </ul>
         </nav>
-        <!-- Promo Bar and Login moved here -->
-        <div class="right-corner">
+        <div class="right-corner desktop-menu">
           <div class="promo-bar">Try Live 12 for free</div>
           <div class="login-register">Log in or register</div>
         </div>
+
+        <div class="menu-toggle">
+          <p>Menu</p>
+          <i class="down-icon"></i>
+        </div>
       </div>
-      <!-- Sticky Navbar -->
+      <div class="mobile-menu">
+        <nav>
+          <ul>
+            <li>Live</li>
+            <li>Push</li>
+            <li>Move</li>
+            <li>Note</li>
+            <li>Link</li>
+            <li>Shop</li>
+            <li>Packs</li>
+            <li>Help</li>
+            <li id="mobile-more">More +</li>
+          </ul>
+        </nav>
+        <div class="promo-bar">Try Live 12 for free</div>
+        <div class="login-register">Log in or register</div>
+      </div>
       <div class="sticky-nav">
         <nav>
           <ul>
@@ -49,7 +69,7 @@
         </nav>
       </div>
     </header>
-
+    
     <main>
       <section class="hero-section">
         <h1 class="overlay-text">Ableton</h1>
@@ -72,7 +92,6 @@
               </ul>
               <div class="social-media-icons">
                 <a href="#"><i class="fab fa-facebook"></i></a>
-                <!-- <a href="#"><i class="fab fa-x-twitter"></i></a> -->
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -151,4 +170,191 @@
       </div>
     </footer>
   </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ableton</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ------------------------------------------------ -->
+    <header>
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" />
+        <!-- FOR REDUCED SCREEN -->
+        <div class="menu-toggle">
+          <p>Menu</p>
+          <i class="down-icon"></i>
+          <div class="menu">
+            <p>Live</p>
+            <p>Push</p>
+            <p>Note</p>
+            <p>Link</p>
+            <p>Shop</p>
+            <p>Packs</p>
+            <p>Help</p>
+            <p style="color: #ff764d">Try Live for free</p>
+          </div>
+        </div>
+      </div>
+      <div class="header-one">
+        <div class="header-left">
+          <!-- FOR FULL SCREEN -->
+          <ul>
+            <li>Live</li>
+            <li>Push</li>
+            <li>Note</li>
+            <li>Link</li>
+            <li>Shop</li>
+            <li>Packs</li>
+            <li>Help</li>
+            <li style="color: #ff764d">More +</li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <p style="color: #0000ff">Try Live for free</p>
+          <p>Log in or register</p>
+        </div>
+      </div>
+    </header>
+    <div class="header-two">
+      <p style="color: #ff764d">About</p>
+      <p>Jobs</p>
+      <p>Apprenticeships</p>
+    </div>
+    <!-- ------------------------------------------------ -->
+  <img class="hero-image" src="./images/hero-image.jpg" alt="hero-image" srcset="" />
+  <p class="hero-title">Ableton</p>
+
+  <div class="text-wrapper">
+    <div class="text-container">
+      <h3>
+        We make <a href="#">Live</a>, <a href="#">Push</a> and
+        <a href="#">Link</a> - uniques software and hardware for music
+        creation and performance. With these products, our communiy of users
+        creates amazing things.
+      </h3>
+      <p>
+        Ableton was founded in 1999 and released the first version of Live in
+        2001. Our products are used by a community of dedicated musicians.
+        sound designers, and artists from across the world.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------ -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="./images/up-icon.svg" alt="ableton-logo" srcset="" />
+      </div>
+      <div class="footer-info">
+        <div class="grid-items">
+          <div class="footer-titles">
+            <p>Register Live or Push ></p>
+            <p>About Ableton ></p>
+            <p>Jobs ></p>
+          </div>
+          <div class="social-logo">
+            <i class="fa-brands fa-square-facebook fa-2xl" style="color: #005cfa"></i>
+            <i class="fa-brands fa-square-youtube fa-2xl" style="color: #eb2424"></i>
+            <i class="fa-brands fa-square-twitter fa-2xl" style="color: #75a2f0"></i>
+            <i class="fa-brands fa-square-instagram fa-2xl" style="color: #f58924"></i>
+          </div>
+        </div>
+        <div class="grid-items">
+          <div class="footer-titles">
+            <p style="font-weight: 600">Education</p>
+            <p>Offers for students and teachers ></p>
+            <p>Ableton for the Classroom ></p>
+            <p>Ableton for Colleges and Universities ></p>
+          </div>
+        </div>
+        <div class="grid-items">
+          <div class="footer-titles">
+            <p style="font-weight: 600">Sign up to our newsletter</p>
+            <p style="line-height: 1.5">
+              Enter your email address to stay up to date with the latest
+              offers, tutorials, downloads, surveys and more.
+            </p>
+          </div>
+          <input class="email-input" type="email" placeholder="Email Address" name="email" id="" />
+          <button class="signup-button">Sign Up</button>
+        </div>
+        <div class="grid-items">
+          <div class="footer-titles">
+            <p style="font-weight: bold">Community</p>
+            <p>Find Ableon user Groups ></p>
+            <p>Find Certified Training ></p>
+            <p>Become a Cetified Trainer ></p>
+          </div>
+        </div>
+        <div class="grid-items">
+          <div class="footer-titles">
+            <p style="font-weight: bold">Distributors</p>
+            <p>Find Distributors ></p>
+            <p>Try Push in-store ></p>
+          </div>
+        </div>
+        <div class="grid-items">
+          <div class="footer-titles">
+            <p style="font-weight: bold">Language and Location</p>
+          </div>
+          <div class="dropdown-menu">
+            <select title="language" name="language" id="language">
+              <option value="en">English</option>
+              <option value="de">Deutsch</option>
+              <option value="fr">Français</option>
+              <option value="ja">日本語</option>
+              <option value="zh-cn">简体中文</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
+          <div class="dropdown-menu">
+            <select title="country" name="country" id="country">
+              <option value="in">India</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="fr">France</option>
+              <option value="de">Germany</option>
+              <option value="ca">Canada</option>
+              <option value="jp">Japan</option>
+              <option value="cn">China</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="footer-others">
+        <div class="extras1">
+          <a href="#">Contact Us</a>
+          <a href="#">Press Resources</a>
+          <a href="#">Legal Info</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Settings</a>
+          <a href="#">Imprint</a>
+        </div>
+        <div class="extras2">
+          <p>Made in Berlin</p>
+          <img src="./images/logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- ------------------------------------------------ -->
+  </body>
+  <script src="script.js"></script>
 </html>
