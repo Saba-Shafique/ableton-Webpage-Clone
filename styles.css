@@ -25,11 +25,13 @@ header {
 
 .logo {
   display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 5rem;
-  width: 5rem;
+  height: 2.5rem;
+  width: 4rem;
+  padding-bottom: auto;
   align-items: center;
   margin-left: 2rem;
   z-index: 10;
@@ -472,9 +474,9 @@ footer {
   padding-top: 8.33vw;
 }
 
-.footer-logo img {
-  width: 18%;
-  margin-bottom: 4rem;
+.footer-logo h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .footer-info {
